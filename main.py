@@ -30,5 +30,5 @@ Content-Type: text/plain; charset="UTF-8";
 Регистрируйся → {link}  
 На курсы, которые еще не вышли, можно подписаться и получить уведомление о релизе сразу на имейл.""".format(mail_from= "YaFEzzz@yandex.ru", mail_to= "YaFEzzz@yandex.ru", subject= "Приглашение!", friend_name= "Мария!", my_name= "Александр", link= "https://dvmn.org/profession-ref-program/iiiiiiiiiiiiiyyyyyyy/NDvX2/")
 letter=letter.encode("UTF-8")
-server.sendmail("sender_email", "recipient_email", letter)
+server.sendmail(sender_email, recipient_email, letter)
 server.quit()
